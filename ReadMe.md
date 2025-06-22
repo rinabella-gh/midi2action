@@ -7,6 +7,30 @@
 ## Background.
 ### _(or, Why am I here?)_
 
+I typeset... or rather _design_ printed books. In the past (and hopefully in the future) this includes books in non-latin scripts. This creates the need to be able to produce unicode glyphs that aren't on the standard US keyboard.  While I can produce these by character mapping tools, this is slow, which means touching up design flaws like an errant minus that should be a figure dash takes an outsize portion of my time. In addition, finishing a design involves fixing paragraphs so they break in certain ways (no single words on the last line and no single lines at column breaks, and hyphenation only occurs in certain ways.)  A large book has hundreds of pages, and thousands of paragraphs, so this becomes very repetitive. Calling macros to change the shape of a paragraph from a keyboard with live typing keys, where the immediate response is most of the words in the paragraph shift... Mistyping a live glyph instead of a function key can go unnoticed, introducing error instead of improvement. 
+
+So, because of my background: The goal of midimacros is to provide
+
+1. __A programmable button board__  that provides nothing but function keys (midimacros) for long sessions finishing books; and alternatively
+2. A user-programmable __2nd typing keyboard__ for producing unusual glyphs, both 
+    a. glyphs used in book publishing, and
+    b. alternate scripts like Hindi, Hebrew, or Korean.
+
+After playing with the ___xdotool___ command that popped up as a solution on a web discussion about this, I added a 3rd goal: 
+
+3. provide advance keypress ---> multiple click options for __2 handed mouse control__. 
+
+Accomplishing Goal 3 introduced a squeezed keyboard that I wanted more feature than will fit, so I then added a 4th  and 5th goal:
+
+4. Keys and pads produce intuitive multiple responses based on __touch sensitivity__. 
+5. __Key chords__ (pressing multiple keys at once) produce alternate responses. 
+
+Since the inexpensive midi controller purchased for this endeavour includes additional controls (pads, wheels, fader, and dials,) I have played with including these into the code:
+
+6. Intuitive features for __control pads, faders, dials, and wheels__.
+
+After 5ish programming sessions spread across years, I'm approaching successful implementation on Goals 1-4, and goal 6 has some weak setaup, but I have not done any real work toward goal 5. The code base I started from is by design 1 input, and not well formed for key chords.  I'm currently (infrequently) reading about shorthand scripts and stenotype like court recorders use. But this goal 5 at least for now seems like it needs to be separated from the other 4, and probably done by someone who can actually play a piano with multiple fingers.
+
 ### Translating MIDI into computer keystrokes on Linux. 
 
 > Re: (https://superuser.com/questions/1170136/translating-midi-input-into-computer-keystrokes-on-linux)
@@ -125,6 +149,10 @@ ____
 
 2. It might be helpful to debug by running aseqdump -p “yourkeyboard” in a 2nd terminal. multiple instances of aseqdump seem to run fine. 
 3. The script can be stopped by pressing ctrl-c or closing the terminal window.
+
+## Suggestions, Bugs, Feedback
+
+Please use the issues tab here in this github project to make suggestions, provide feedback and report bugs.  I'm especially interested in alternate script layouts.  I've no clue, but it is my hope that eventually, I'm not the only one using a 32 key midi board as a 2nd multi layout typing board, so keymaps for Korean, Japanese, etc. are accepted. 
    
 ____
 
