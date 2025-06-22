@@ -97,9 +97,9 @@ ____
 
 ## Defining new actions: 
 
-1. If you have additional Actions, ensure they are included on the actions tab. "MMName" is the search text you will include on the "keyboard" tab to setup the key action. "Abbr" is the text that will appear on the Overlay tab (acts as both a validation, and a cheatsheet for using MidiMacros.) "Bash Command" is any command you want to run from bash.  Note that my setup is all about pushig keystrokes and macros into text programs like jedit and LibreOffice Writer, but any bash command is valid, noting that I haven't created new processes for each macro press, so If your bash command needs a new shell, to keep both midiMacros and your function working, you need to spawn the new shell in the bash text you enter in this column. "Type" is a column I use to sort fields if I can't find a key I know I've programmed (triple click? where'd it go?)
+1. If you have additional Actions, ensure they are included on the actions tab. __MM Name__ is the search text you will include on the "keyboard" tab to setup the key action. __Abbr__ is the text that will appear on the Overlay tab (acts as both a validation, and a cheatsheet for using MidiMacros.) __Bash Command__ is any command you want to run from bash.  Note that my setup is all about pushig keystrokes and macros into text programs like jedit and LibreOffice Writer, but any bash command is valid, noting that I haven't created new processes for each macro press, so If your bash command needs a new shell, to keep both midiMacros and your function working, you need to spawn the new shell in the bash text you enter in this column. __Type__ is a column I use to sort fields if I can't find a key I know I've programmed (triple click? where'd it go?)
 
-2. After adding any Actions to the Actions tab, the table must be sorted alphabetically by the 'MM-Name' field. MidiMacros won't work until you sort the Actions field by the "MM-Name" column.
+2. After adding any Actions to the Actions tab, the table must be sorted alphabetically by the 'MM-Name' field. MidiMacros won't work until you sort the Actions field by the __MM-Name__ column.
 3. Copy the Action Description field from the Actions Tab, and paste into the appropriate Actions cell in the Keyboard, Pads, or Controls Tab.
 4. Save your configuration file in Calc format. (.ods or .fods)
 
