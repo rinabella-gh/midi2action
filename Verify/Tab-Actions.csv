@@ -76,6 +76,7 @@
 	Big X	X	xdotool key --clearmodifiers X	Letters
 	Big Y	Y	xdotool key --clearmodifiers Y	Letters
 	Big Z	Z	xdotool key --clearmodifiers Z	Letters
+	Calculator	Calc		
 	Caret	^	xdotool key asciicircum	Numeric
 	Click	M1	xdotool click 1	Mouse
 	Colon	:	xdotool key colon	Punctuation
@@ -96,6 +97,7 @@
 	Control Alt D	CA+D	xdotool key ctrl+alt+d	Function
 	Control Alt E	CA+E	xdotool key ctrl+alt+e	Function
 	Control Alt F	CA+F	xdotool key ctrl+alt+f	Function
+	Control Alt T	CA+T	xdotool key ctrl+alt+t	System
 	Control Alt F1	CA+F1	xdotool key ctrl+alt+F1	Function
 	Control Alt F10	CA+F10	xdotool key ctrl+alt+F10	Function
 	Control Alt F11	CA+F11	xdotool key ctrl+alt+F11	Function
@@ -109,7 +111,7 @@
 	Control Alt F4	CA+F4	xdotool key ctrl+alt+F4	Function
 	Control Alt F5	CA+F5	xdotool key ctrl+alt+F5	Function
 	Control Alt F6	CA+F6	xdotool key ctrl+alt+F6	Function
-	Control Alt F7	CA+F7	xdotool key ctrl+alt+F7	Function
+	Control Alt F7	CA+F7	xdotool key -clearmodifiers ctrl+alt+F7	Function
 	Control Alt F8	CA+F8	xdotool key ctrl+alt+F8	Function
 	Control Alt F9	CA+F9	xdotool key ctrl+alt+F9	Function
 	Control Alt G	CA+G	xdotool key ctrl+alt+g	Function
