@@ -43,6 +43,8 @@
 	Alt R	A+R	xdotool key alt+r	Function
 	Alt S	A+S	xdotool key alt+s	Function
 	Alt Tab	A+Tab	xdotool key alt+Tab	Function
+	Alternate Latch	Alt 🡳 	xdotool keydown Alt_L	System
+	Alternate Release	Alt 🡱	xdotool keyup Alt_L	System
 	Ampersand	&	xdotool key ampersand	Symbol
 	Apostrophe	'	xdotool key apostrophe	Punctuation
 	Asterisk	*	xdotool key asterisk	Numeric
@@ -76,7 +78,7 @@
 	Big X	X	xdotool key --clearmodifiers X	Letters
 	Big Y	Y	xdotool key --clearmodifiers Y	Letters
 	Big Z	Z	xdotool key --clearmodifiers Z	Letters
-	Calculator	Calc		
+	Calculator	Calc	xdotool key XF86Calculator	
 	Caret	^	xdotool key asciicircum	Numeric
 	Click	M1	xdotool click 1	Mouse
 	Colon	:	xdotool key colon	Punctuation
@@ -97,7 +99,6 @@
 	Control Alt D	CA+D	xdotool key ctrl+alt+d	Function
 	Control Alt E	CA+E	xdotool key ctrl+alt+e	Function
 	Control Alt F	CA+F	xdotool key ctrl+alt+f	Function
-	Control Alt T	CA+T	xdotool key ctrl+alt+t	System
 	Control Alt F1	CA+F1	xdotool key ctrl+alt+F1	Function
 	Control Alt F10	CA+F10	xdotool key ctrl+alt+F10	Function
 	Control Alt F11	CA+F11	xdotool key ctrl+alt+F11	Function
@@ -127,11 +128,14 @@
 	Control Alt Q	CA+Q	xdotool key ctrl+alt+q	Function
 	Control Alt R	CA+R	xdotool key ctrl+alt+r	Function
 	Control Alt S	CA+S	xdotool key ctrl+alt+s	Function
+	Control Alt T	CA+T	xdotool key ctrl+alt+t	System
 	Control Alt Tilde	CA+ ~	xdotool key ctrl+alt+asciitilde	Function
 	Control F13	C+F13	xdotool key ctrl+F13	Function
 	Control F14	C+F14	xdotool key ctrl+F14	Function
 	Control F15	C+F15	xdotool key ctrl+F15	Function
 	Control F16	C+F16	xdotool key ctrl+F16	Function
+	Control Latch	Ctrl 🡳 	xdotool keydown Control_L	System
+	Control Release	Ctrl 🡱	xdotool keyup Control_L	System
 	Copy	Copy	xdotool key --clearmodifiers ctrl+c	Controls
 	Cut	Cut	xdotool key --clearmodifiers ctrl+x	Controls
 	Dash	-	xdotool key minus	Numeric
@@ -164,6 +168,8 @@
 	Hash	#	xdotool key numbersign	Symbol
 	Hello	HW	xdotool type -delay 300 $'HELLORLD!'	Custom
 	Home	Home	xdotool key Home	Navigation
+	Hyper Latch	Hypr 🡳 	xdotool keydown Hyper_L	System
+	Hyper Release	Hypr 🡱	xdotool keyup Hyper_L	System
 	Launch App 1	App 1	xdotool key XF86Launch1	System
 	Launch App 2	App 2	xdotool key XF86Launch2	System
 	Launch App 3	App 3	xdotool key XF86Launch3	System
@@ -210,12 +216,15 @@
 	Little x	x	xdotool key --clearmodifiers x	Letters
 	Little y	y	xdotool key --clearmodifiers y	Letters
 	Little z	z	xdotool key --clearmodifiers z	Letters
+	Meta Latch	Meta 🡳 	xdotool keydown Meta_L	System
+	Meta Release	Meta 🡱	xdotool keyup Meta_L	System
 	Middle Click	M2	xdotool click 2	Mouse
 	Middle Double Click	M2x2	xdotool click --repeat 2 --delay 10 2	Mouse
 	Middle Quad Click	M2x4	xdotool click --repeat 4 --delay 5 2	Mouse
 	MIddle Triple Click	M2x3	xdotool click --repeat 3 --delay 5 2	Mouse
 	Minus	 - 	xdotool key minus	Numeric
 	Next	Next	xdotool key Next	Navigation
+	Next Tab	Tab 🡲	xdotool key ctrl+Tab	Navigation
 	Page Down	Pg Dn	xdotool key Page_Down	Navigation
 	Page Up	Pg Up	xdotool key Page_Up	Navigation
 	Paragraph	 ¶ 	xdotool type -delay 50 $'\u00b6'	Punctuation
@@ -223,6 +232,7 @@
 	Percent	 % 	xdotool key percent	Numeric
 	Period	.	xdotool key period	Punctuation
 	Plus	+	xdotool key plus	Numeric
+	Prev Tab	🡰 Tab	xdotool key ctrl+shift+Tab	Navigation
 	Prior		xdotool key Prior	Navigation
 	Quad Click	M1x4	xdotool click --repeat 4 --delay 5 1	Mouse
 	Question	?	xdotool key question	Punctuation
@@ -281,8 +291,12 @@
 	Shift F14	S+F14	xdotool key shift+F14	Function
 	Shift F15	S+F15	xdotool key shift+F15	Function
 	Shift F16	S+F16	xdotool key shift+F16	Function
+	Shift Latch	Shift 🡳	xdotool keydown Shift_L	System
+	Shift Release	Shift 🡱	xdotool keyup Shift_L	System
 	Slash	/	xdotool key slash	Numeric
 	Space	Spc	xdotool key space	Spacing
+	Super Latch	Supr 🡳 	xdotool keydown Super_L	System
+	Super Release	Supr 🡱	xdotool keyup Super_L	System
 	Sys Menu	Sys	xdotool key -clearmodifiers Super_L	Navigation
 	Tab	-->|	xdotool key Tab	Spacing
 	Tab Back	|<--	xdotool key shift+Tab	Navigation
