@@ -1,3 +1,31 @@
+### [tldr]
+
+The midimacros.bsh file is a bash script that (should) run on any Linux computer with X or Wayland running that has alsa installed, detect all your midi devices, and provide keystrokes that are defined (and permanently compiled into the script) in the midimacros-IDE.fods file. Running from within Wayland is not tested, but it is expected that it will have less success working across the entire computer than when run from X.  The .fods is "flat opendocument spreadsheet", and will open in LibreOffice, or REALLY old versions of OpenOffice (as in when Sun took the project over old.)  "Flat" means it's really just a big .xml file you can view with a text browser too. I use this for storing on github even though LibreOffice makes zillions of changes internally every time you press a key. 
+
+after making sure it's executable
+
+> ./midimacros.bsh 
+
+Allowed arguments
+
+> ./midimacros.bsh -l 
+
+list all detected devices
+
+> ./midimacros.bsh -t (yourMidiDevice) 
+
+test that alsa is seeing keystrokes. 
+
+> ./midimacros.bsh
+
+By itself midimacros will detect all connected devices and translate every press on every device that matches the definitions file. 
+
+> ./midimacros.bsh (yourMidiDevice)
+
+If you need to limit midimacros to only some of the connected devices, you can list them using the same means as aseqdump allows client name or port numbers comma separated with no space between clients or ports. 
+
+
+
 ## Disclaimers.
 
 > Read through this entire document before attempting to use AV-MidiMacros.
