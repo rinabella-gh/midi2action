@@ -1,3 +1,37 @@
+### [tldr]
+
+The midimacros.bsh file is a bash script that (should) run on any Linux computer with X or Wayland running that has alsa installed, detect all your midi devices, and provide keystrokes and other actions that are defined (and permanently compiled into the script) in the midimacros-IDE.fods file. Running from within Wayland is not tested, but it is expected that it will have less success working across the entire computer than when run from X.  The .fods is "flat opendocument spreadsheet", and will open in LibreOffice, or REALLY old versions of OpenOffice (as in when Sun took the project over old.)  "Flat" means it's really just a big .xml file you can view with a text browser too. I use this for storing on github even though LibreOffice makes zillions of changes internally every time you press a key. 
+
+The midimacros-IDE has code generating tabs for all MIDI keys on channel zero, and random events that align with controllers I own.  It also has these mapped on several tabs to use or print for reference, and a tab to copy new executable script if you want to customize the key layout. 
+
+Most of this is the idea and programming from the superuser site described below.  Anything that I added, I release for all use without any additional restrictions.  For that original code, it seems simple and short enough that no license need be sought, but fair warning... I did indeed copy from superuser. 
+
+### Running midimacros
+
+After making sure it's executable,
+
+> ./midimacros.bsh 
+
+Allowed arguments:
+
+> ./midimacros.bsh -l 
+
+list all detected devices
+
+> ./midimacros.bsh -t (yourMidiDevice) 
+
+test that alsa is seeing keystrokes. 
+
+> ./midimacros.bsh
+
+By itself midimacros will try to detect all connected devices and translate every press on every device that matches the definitions file. 
+
+> ./midimacros.bsh (yourMidiDevice)
+
+If you need to limit midimacros to only some of the connected devices, you can list them using the same means as aseqdump allows client name or port numbers comma separated with no space between clients or ports. As in midimacros Xonar,APC  ; or midimacros 24:0,24:1 ; and it's either numbers or names, no mixing.
+
+
+
 ## Disclaimers.
 
 > Read through this entire document before attempting to use AV-MidiMacros.
