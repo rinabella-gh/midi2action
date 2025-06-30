@@ -36,8 +36,8 @@
 	Alt I	A+I	xdotool key alt+i	Function
 	Alt J	A+J	xdotool key alt+j	Function
 	Alt K	A+K	xdotool key alt+k	Function
-	Alt Key Latch	[A}	xdotool keydown Alt_L	System
-	Alt Key Release	{A]	xdotool keyup Alt_L	System
+	Alt Key Latch	[A}	xdotool keydown Alt_L	Latch
+	Alt Key Release	{A]	xdotool keyup Alt_L	Latch
 	Alt L	A+L	xdotool key alt+l	Function
 	Alt M	A+M	xdotool key alt+m	Function
 	Alt Minus	A+ -	xdotool key alt+minus	Function
@@ -48,14 +48,14 @@
 	Alt R	A+R	xdotool key alt+r	Function
 	Alt S	A+S	xdotool key alt+s	Function
 	Alt Tab	A+Tab	xdotool key alt+Tab	Function
-	Alternate Latch	Alt 🡳 	xdotool keydown Alt_L	System
-	Alternate Release	Alt 🡱	xdotool keyup Alt_L	System
+	Alternate Latch	Alt 🡳 	xdotool keydown Alt_L	Latch
+	Alternate Release	Alt 🡱	xdotool keyup Alt_L	Latch
 	Ampersand	&	xdotool key ampersand	Symbol
 	Apostrophe	'	xdotool key apostrophe	Punctuation
 	Asterisk	*	xdotool key asterisk	Numeric
 	At	@	xdotool key at	Symbol
-	Babel Key Latch	[B}	xdotool keydown XF86Blue	System
-	Babel Key Release	{B]	xdotool keyup XF86Blue	System
+	Babel Key Latch	[B}	xdotool keydown XF86Blue	Latch
+	Babel Key Release	{B]	xdotool keyup XF86Blue	Latch
 	Backslash	\	xdotool key backslash	Symbol
 	Backspace	Bksp	xdotool key BackSpace	Controls
 	Bar	|	xdotool key bar	Symbol
@@ -86,8 +86,8 @@
 	Big Y	Y	xdotool key Y	Letters
 	Big Z	Z	xdotool key Z	Letters
 	Calculator	Calc	xdotool key XF86Calculator	System
-	Call Key Latch	[K}	xdotool keydown KP_F1	System
-	Call Key Release	{K]	xdotool keyup KP_F1	System
+	Call Key Latch	[K}	xdotool keydown KP_F1	Latch
+	Call Key Release	{K]	xdotool keyup KP_F1	Latch
 	Caret	^	xdotool key asciicircum	Numeric
 	Click	M1	xdotool click 1	Mouse
 	Colon	:	xdotool key colon	Punctuation
@@ -148,14 +148,14 @@
 	Control F16	C+F16	xdotool key ctrl+F16	Function
 	Control Key Latch	[C}	xdotool keydown Control_L	System
 	Control Key Release	{C]	xdotool keyup Control_L	System
-	Control Latch	Ctrl 🡳 	xdotool keydown Control_L	System
-	Control Release	Ctrl 🡱	xdotool keyup Control_L	System
+	Control Latch	Ctrl 🡳 	xdotool keydown Control_L	Latch
+	Control Release	Ctrl 🡱	xdotool keyup Control_L	Latch
 	Copy	Copy	xdotool key --clearmodifiers ctrl+c	Controls
 	Cut	Cut	xdotool key --clearmodifiers ctrl+x	Controls
 	Dash	-	xdotool key minus	Numeric
 	Delete	Del	xdotool key KP_Delete	Controls
-	Dev Key Latch	[D}	xdotool keydown XF86Keyboard	System
-	Dev Key Release	{D]	xdotool keyup XF86Keyboard	System
+	Dev Key Latch	[D}	xdotool keydown XF86Keyboard	Latch
+	Dev Key Release	{D]	xdotool keyup XF86Keyboard	Latch
 	Dollar Sign	$	xdotool key dollar	Symbol
 	Double Click	M1x2	xdotool click --repeat 2 --delay 10 1	Mouse
 	Down	Down	xdotool key Down	Navigation
@@ -163,8 +163,8 @@
 	Enter	Ent	xdotool key KP_Enter	Spacing
 	Equal	=	xdotool key equal	Numeric
 	Escape	Esc	xdotool key Escape	Controls
-	Ether Key Latch	[E}	xdotool keydown L3	System
-	Ether Key Release	{E]	xdotool keyup L3	System
+	Ether Key Latch	[E}	xdotool keydown L3	Latch
+	Ether Key Release	{E]	xdotool keyup L3	Latch
 	Exclamation	!	xdotool key exclam	Punctuation
 	F1	F1	xdotool key F1	Function
 	F10	F10	xdotool key F10	Function
@@ -182,23 +182,23 @@
 	F7	F7	xdotool key F7	Function
 	F8	F8	xdotool key F8	Function
 	F9	F9	xdotool key F9	Function
-	Function Key Latch	[F}	xdotool keydown KP_F4	System
-	Function Key Release	{F]	xdotool keyup KP_F4	System
+	Function Key Latch	[F}	xdotool keydown KP_F4	Latch
+	Function Key Release	{F]	xdotool keyup KP_F4	Latch
 	Greater	>	xdotool key greater	Numeric
-	Guide Key Latch	[G}	xdotool keydown Green	System
-	Guide Key Release	{G]	xdotool keyup Green	System
+	Guide Key Latch	[G}	xdotool keydown XF86Green	Latch
+	Guide Key Release	{G]	xdotool keyup XF86Green	Latch
 	Hash	#	xdotool key numbersign	Symbol
 	Hello	HW	xdotool type -delay 300 $'HELLORLD!'	Custom
 	Home	Home	xdotool key Home	Navigation
-	Hyper Key Latch	[H}	xdotool keydown Hyper_L	System
-	Hyper Key Release	{H]	xdotool keyup Hyper_L	System
-	Hyper Latch	Hypr 🡳 	xdotool keydown Hyper_L	System
-	Hyper Release	Hypr 🡱	xdotool keyup Hyper_L	System
+	Hyper Key Latch	[H}	xdotool keydown Hyper_L	Latch
+	Hyper Key Release	{H]	xdotool keyup Hyper_L	Latch
+	Hyper Latch	Hypr 🡳 	xdotool keydown Hyper_L	Latch
+	Hyper Release	Hypr 🡱	xdotool keyup Hyper_L	Latch
 	Idiom Key Latch	[I}	xdotool keydown XF86iTouch	System
 	Idiom Key Release	{I]	xdotool keyup XF86iTouch	System
 	Insert	Ins	Insert	Controls
-	Jux Key Latch	[J}	xdotool keydown KP_F3	System
-	Jux Key Release	{J]	xdotool keyup KP_F3	System
+	Jux Key Latch	[J}	xdotool keydown KP_F3	Latch
+	Jux Key Release	{J]	xdotool keyup KP_F3	Latch
 	Launch App 1	App 1	xdotool key XF86Launch1	System
 	Launch App 2	App 2	xdotool key XF86Launch2	System
 	Launch App 3	App 3	xdotool key XF86Launch3	System
@@ -245,8 +245,8 @@
 	Little x	x	xdotool key x	Letters
 	Little y	y	xdotool key y	Letters
 	Little z	z	xdotool key z	Letters
-	Load Key Latch	[L}	xdotool keydown L1	System
-	Load Key Release	{L]	xdotool keyup L1	System
+	Load Key Latch	[L}	xdotool keydown L1	Latch
+	Load Key Release	{L]	xdotool keyup L1	Latch
 	Meta Latch	Meta 🡳 	xdotool keydown Meta_L	System
 	Meta Release	Meta 🡱	xdotool keyup Meta_L	System
 	Middle Click	M2	xdotool click 2	Mouse
@@ -254,8 +254,8 @@
 	Middle Quad Click	M2x4	xdotool click --repeat 4 --delay 5 2	Mouse
 	MIddle Triple Click	M2x3	xdotool click --repeat 3 --delay 5 2	Mouse
 	Minus	 - 	xdotool key minus	Numeric
-	Mod Key Latch	[M}	xdotool keydown Meta_L	System
-	Mod Key Release	{M]	xdotool keyup Meta_L	System
+	Mod Key Latch	[M}	xdotool keydown Meta_L	Latch
+	Mod Key Release	{M]	xdotool keyup Meta_L	Latch
 	Mouse Down	🡳	xdotool mousemove_relative 0 10	Navigation
 	Mouse Left	🡰	xdotool mousemove_relative -- -10 0	Navigation
 	Mouse NE	🡵	xdotool mousemove_relative -- 10 -10	Navigation
@@ -266,14 +266,14 @@
 	Mouse Up	🡱	xdotool mousemove_relative -- 0 -10	Navigation
 	Next	Next	xdotool key Next	Navigation
 	Next Tab	Tab 🡲	xdotool key ctrl+Tab	Navigation
-	No Key Latch	[N}	xdotool keydown XF86User2KB	System
-	No Key Release	{N]	xdotool keyup XF86User2KB	System
-	Op Key Latch	[O}	xdotool keydown XF86Option	System
-	Op Key Release	{O]	xdotool keyup XF86Option	System
+	No Key Latch	[N}	xdotool keydown XF86User2KB	Latch
+	No Key Release	{N]	xdotool keyup XF86User2KB	Latch
+	Op Key Latch	[O}	xdotool keydown XF86Option	Latch
+	Op Key Release	{O]	xdotool keyup XF86Option	Latch
 	Page Down	Pg Dn	xdotool key Page_Down	Navigation
 	Page Up	Pg Up	xdotool key Page_Up	Navigation
-	Pal Key Latch	[P}	xdotool keydown KP_F2	System
-	Pal Key Release	{P]	xdotool keyup KP_F2	System
+	Pal Key Latch	[P}	xdotool keydown KP_F2	Latch
+	Pal Key Release	{P]	xdotool keyup KP_F2	Latch
 	Paragraph	 ¶ 	xdotool type -delay 50 $'\u00b6'	Punctuation
 	Paste	Paste	xdotool key --clearmodifiers ctrl+v	Controls
 	Percent	 % 	xdotool key percent	Numeric
@@ -281,13 +281,13 @@
 	Plus	+	xdotool key plus	Numeric
 	Prev Tab	🡰 Tab	xdotool key ctrl+shift+Tab	Navigation
 	Prior		xdotool key Prior	Navigation
-	Q Key Latch	[Q}	xdotool keydown XF86Q	System
-	Q Key Release	{Q]	xdotool keyup XF86Q	System
+	Que Key Latch	[Q}	xdotool keydown XF86Q	Latch
+	Que Key Release	{Q]	xdotool keyup XF86Q	Latch
 	Quad Click	M1x4	xdotool click --repeat 4 --delay 5 1	Mouse
 	Question	?	xdotool key question	Punctuation
-	Quote	""""	xdotool key quotedbl	Punctuation
-	Ready Key Latch	[R}	xdotool keydown XF86Red	System
-	Ready Key Release	{R]	xdotool keyup XF86Red	System
+	Quote	"	xdotool key quotedbl	Punctuation
+	Ready Key Latch	[R}	xdotool keydown XF86Red	Latch
+	Ready Key Release	{R]	xdotool keyup XF86Red	Latch
 	Right	Right	xdotool key Right	Navigation
 	Right Bracket	]	xdotool key bracketright	Symbol
 	Right Click	M3	xdotool click 3	Mouse
@@ -347,28 +347,28 @@
 	Shift F14	S+F14	xdotool key shift+F14	Function
 	Shift F15	S+F15	xdotool key shift+F15	Function
 	Shift F16	S+F16	xdotool key shift+F16	Function
-	Shift Latch	Shift 🡳	xdotool keydown Shift_L	System
-	Shift Release	Shift 🡱	xdotool keyup Shift_L	System
+	Shift Latch	Shift 🡳	xdotool keydown Shift_L	Latch
+	Shift Release	Shift 🡱	xdotool keyup Shift_L	Latch
 	Slash	/	xdotool key slash	Numeric
 	Space	Spc	xdotool key space	Spacing
-	Super Latch	Supr 🡳 	xdotool keydown Super_L	System
-	Super Release	Supr 🡱	xdotool keyup Super_L	System
-	Sys Key Latch	[S}	xdotool keydown Super_L	System
-	Sys Key Release	{S]	xdotool keyup Super_L	System
+	Super Latch	Supr 🡳 	xdotool keydown Super_L	Latch
+	Super Release	Supr 🡱	xdotool keyup Super_L	Latch
+	Sys Key Latch	[S}	xdotool keydown Super_L	Latch
+	Sys Key Release	{S]	xdotool keyup Super_L	Latch
 	Sys Menu	Sys	xdotool key -clearmodifiers Super_L	Navigation
 	Tab	-->|	xdotool key Tab	Spacing
 	Tab Back	|<--	xdotool key shift+Tab	Navigation
-	Tab Key Latch	[T}	xdotool keydown XF86Tools	System
-	Tab Key Release	{T]	xdotool keyup XF86Tools	System
+	Tools Key Latch	[T}	xdotool keydown XF86Tools	Latch
+	Tools Key Release	{T]	xdotool keyup XF86Tools	Latch
 	Tilde	 ~ 	xdotool key asciitilde	Punctuation
 	Triple Click	M1x3	xdotool click --repeat 3 --delay 5 1	Mouse
-	Uber Key Latch	[U}	xdotool keydown XF86UserPB	System
-	Uber Key Release	{U]	xdotool keyup XF86UserPB	System
+	Uber Key Latch	[U}	xdotool keydown XF86UserPB	Latch
+	Uber Key Release	{U]	xdotool keyup XF86UserPB	Latch
 	Undo	Undo	xdotool key --clearmodifiers ctrl+z	Controls
 	Up	Up	xdotool key Up	Navigation
 	USFM Add	\add	xdotool type -delay 50 $'\u005cadd'	Macro
-	Val Key Latch	[V}	xdotool keydown XF86View	System
-	Val Key Release	{V]	xdotool keyup XF86View	System
+	Val Key Latch	[V}	xdotool keydown XF86View	Latch
+	Val Key Release	{V]	xdotool keyup XF86View	Latch
 	Volume 1	Vol 01	amixer -D pulse sset Master 8%	Media
 	Volume 10	Vol 10	amixer -D pulse sset Master 83%	Media
 	Volume 11	Vol 11	amixer -D pulse sset Master 92%	Media
@@ -396,13 +396,13 @@
 	VT 7	VT07	xdotool key XF86Switch_VT_7	Navigation
 	VT 8	VT08	xdotool key XF86Switch_VT_8	Navigation
 	VT 9	VT09	xdotool key XF86Switch_VT_9	Navigation
-	Web Key Latch	[W}	xdotool keydown XF86WakeUp	System
-	Web Key Release	{W]	xdotool keyup XF86WakeUp	System
-	Xan Key Latch	[X}	xdotool keydown XF86Yellow	System
-	Xan Key Release	{X]	xdotool keyup XF86Yellow	System
-	Yes Key Latch	[Y}	xdotool keydown XF86User1KB	System
-	Yes Key Release	{Y]	xdotool keyup XF86User1KB	System
-	Zip Key Latch	[Z}	xdotool keydown Zenkaku	System
-	Zip Key Release	{Z]	xdotool keyup Zenkaku	System
+	Web Key Latch	[W}	xdotool keydown XF86WakeUp	Latch
+	Web Key Release	{W]	xdotool keyup XF86WakeUp	Latch
+	Xan Key Latch	[X}	xdotool keydown XF86Yellow	Latch
+	Xan Key Release	{X]	xdotool keyup XF86Yellow	Latch
+	Yes Key Latch	[Y}	xdotool keydown XF86User1KB	Latch
+	Yes Key Release	{Y]	xdotool keyup XF86User1KB	Latch
+	Zip Key Latch	[Z}	xdotool keydown Zenkaku	Latch
+	Zip Key Release	{Z]	xdotool keyup Zenkaku	Latch
 	Zoom In	Zoom +	xdotool key Super_L+Alt_L+equal	Navigation
 	Zoom Out	Zoom -	xdotool key Super_L+Alt_L+minus	Navigation
