@@ -1,0 +1,29 @@
+#!/bin/bash
+if [ "$1" == "-l" ] ; then aseqdump -l ; exit ; fi # = list MIDI connections (-t option) ======
+if [ "$1" == "-t" ]; then aseqdump -p "$2" ; exit ; fi # = test MIDI connections (-p)
+if [ "$1" != "" ]; then export midiDevice=$1 ;  # = use command line for ports
+else         # compile all detected midi ports above 20
+        aseqdump -l
+        export midiDevice="" 
+        export comma=""
+        while IFS=" " read cla rest; do
+               case "$cla" in [2-9][0-9]\:[0-9]) midiDevice="$midiDevice$comma$cla"; esac
+               if [ "$midiDevice" != "" ]; then  comma=","  ; fi
+               done <<< "$(aseqdump -l)"
+        if [ "$midiDevice" == "" ]; then  echo "No Devices found!"; exit;
+        else echo "Monitoring Ports: $midiDevice" ; fi        
+fi
+aseqdump -p $midiDevice | \
+while IFS=":, " read client port ev1 ev2 ch label1 data1 label2 data2 rest; do
+    case "$port $ev1 $ch $data1" in
+ "0 Note 9 36" ) case "$data2" in [1-9]|[1-9][0-9]|1[0-1][0-9]) xdotool key ctrl+alt+7;;  2[5-9]|[3-9][0-9]|1[0-1][0-9]) xdotool key 7;;  12[0-7]) xdotool key comma;; esac ;;  
+ "0 Note 9 37" ) case "$data2" in [1-9]|[1-9][0-9]|1[0-1][0-9]) xdotool key ctrl+alt+8;;  2[5-9]|[3-9][0-9]|1[0-1][0-9]) xdotool key 8;;  12[0-7]) xdotool key 9;; esac ;;  
+ "0 Note 9 38" ) case "$data2" in [1-9]|[1-9][0-9]|1[0-1][0-9]) xdotool key ctrl+alt+9;;  2[5-9]|[3-9][0-9]|1[0-1][0-9]) xdotool key parenleft;;  12[0-7]) xdotool key F11;; esac ;;  
+ "0 Note 9 39" ) case "$data2" in [1-9]|[1-9][0-9]|1[0-1][0-9]) xdotool key ctrl+alt+0;;  2[5-9]|[3-9][0-9]|1[0-1][0-9]) xdotool key parenright;;  12[0-7]) xdotool key F2;; esac ;;  
+ "0 Note 9 40" ) case "$data2" in [1-9]|[1-9][0-9]|1[0-1][0-9]) xdotool key ctrl+alt+Home;;  2[5-9]|[3-9][0-9]|1[0-1][0-9]) xdotool key Home;;  12[0-7]) xdotool key F3;; esac ;;  
+ "0 Note 9 41" ) case "$data2" in [1-9]|[1-9][0-9]|1[0-1][0-9]) xdotool key ctrl+alt+Page_Up;;  2[5-9]|[3-9][0-9]|1[0-1][0-9]) xdotool key Page_Up;;  12[0-7]) xdotool key F4;; esac ;;  
+ "0 Note 9 42" ) case "$data2" in [1-9]|[1-9][0-9]|1[0-1][0-9]) xdotool key ctrl+alt+Page_Down;;  2[5-9]|[3-9][0-9]|1[0-1][0-9]) xdotool key Page_Down;;  12[0-7]) xdotool key F5;; esac ;;  
+ "0 Note 9 43" ) case "$data2" in [1-9]|[1-9][0-9]|1[0-1][0-9]) xdotool key ctrl+alt+Insert;;  2[5-9]|[3-9][0-9]|1[0-1][0-9]) xdotool key ctrl+alt+Insert;;  12[0-7]) xdotool key F6;; esac ;;  
+     esac
+done
+exit
