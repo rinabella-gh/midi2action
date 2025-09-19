@@ -22,4 +22,4 @@ test that alsa is seeing keystrokes.
 
 ## Acknowledgements
 
-This is forked from [AV-MidiMacros](https://github.com/Avante-Vangard/AV-MidiMacros). While it does not explicitly state a license, the author used wording to commit to public domain, and is itself an adaptation from [this stackoverflow](https://superuser.com/questions/1170136/translating-midi-input-into-computer-keystrokes-on-linux). I have removed the bulk of the (impressive) work that was done to have an interace via LibreOffice spreadsheets to pare down only to what I need at this time.
+This is forked from [AV-MidiMacros](https://github.com/Avante-Vangard/AV-MidiMacros). While it does not explicitly state a license, the author used wording to commit to public domain, and is itself an adaptation from [this stackoverflow](https://superuser.com/questions/1170136/translating-midi-input-into-computer-keystrokes-on-linux). I have removed the bulk of the (impressive) work that was done to have an interface via LibreOffice spreadsheets to pare down only to what I need at this time.
